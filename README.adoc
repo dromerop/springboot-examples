@@ -1,0 +1,39 @@
+= Spring-Boot JPA & Projections Error Example
+Daniel Romero P. <romero.cl@gmail.com>
+
+2018-03-29
+
+This example test the JPA repositories ability to map results into entities projections. Some cases work, others no, so probably a bug still persist in the code.
+
+Related bug: https://jira.spring.io/browse/DATAJPA-1185 
+
+In this example we will expose CustomerRepository methods using REST interfaces. HA database is used to create an in memory Customer table.
+
+This project was built based on https://github.com/spring-guides/gs-accessing-data-jpa/tree/master/complete
+
+
+DATAJPA-1185  claims that a similar error was fixed in spring-data 1.11.9, but I have tried
+. spring-boot 1.5.4 (spring-data-jpa 1.11.4)
+. spring-boot 1.5.4 with forced spring-data-jpa 1.11.9 and 
+. spring-boot 1.5.10 (spring-data-jpa 1.11.10) 
+
+and the problem persists.
+
+== Running Project
+
+Just import the project into your IDE as a maven project and run Application.java
+
+== REST URL's
+
+. http://localhost:8080/jpa-projections/customer/find/all
+. http://localhost:8080/jpa-projections/customer/find/allprojected 
+. http://localhost:8080/jpa-projections/customer/find/single/ID
+. http://localhost:8080/jpa-projections/customer/find/singleprojected/ID
+
+== Running Tests
+
+== The Error
+
+----
+ERROR
+----
