@@ -3,7 +3,7 @@ Daniel Romero P. <romero.cl@gmail.com>
 
 2018-03-29
 
-This example test the JPA repositories ability to map results into entities projections. When Specifications are used, there's an error I was unable to find it cause.
+This example tests the JPA repositories ability to map results into entities projections. When Specifications are used, there's an error I was unable to find it cause.
 
 Related bug: https://jira.spring.io/browse/DATAJPA-1185 
 
