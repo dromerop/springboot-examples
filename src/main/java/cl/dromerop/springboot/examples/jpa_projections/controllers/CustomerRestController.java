@@ -61,4 +61,36 @@ public class CustomerRestController {
 
 	}
 	
+	//WORKS
+	@RequestMapping(method = RequestMethod.GET, value = "/find/singlewithspec/{id}")
+	ResponseEntity<?> findSingleWithSpec(Model model, @PathVariable("id") Long id) {
+		
+		return new ResponseEntity<Customer>(customerService.findOneWithSpec(id), HttpStatus.OK);
+
+	}
+	
+	//WORKS
+	@RequestMapping(method = RequestMethod.GET, value = "/find/allwithspec/gt/{id}")
+	ResponseEntity<?> findAllGreaterThanWithSpec(Model model, @PathVariable("id") Long id) {
+		
+		return new ResponseEntity<List<Customer>>(customerService.findAllGreaterThanWithSpec(id), HttpStatus.OK);
+
+	}
+	
+	//DOESN'T WORK, but /find/singlewithspec/{id} does it...
+	@RequestMapping(method = RequestMethod.GET, value = "/find/singleprojectedwithspec/{id}")
+	ResponseEntity<?> findSingleProjectedWithSpec(Model model, @PathVariable("id") Long id) {
+
+		return new ResponseEntity<CustomerProjection>(customerService.findOneProjectedWithSpec(id), HttpStatus.OK);
+
+	}
+	
+	//DOESN'T WORK, but /find/allwithspec/gt/{id} does it...
+	@RequestMapping(method = RequestMethod.GET, value = "/find/allprojectedwithspec/gt/{id}")
+	ResponseEntity<?> findAllProjectedGreaterThanWithSpec(Model model, @PathVariable("id") Long id) {
+		
+		return new ResponseEntity<List<CustomerProjection>>(customerService.findAllProjectedGreaterThanWithSpec(id), HttpStatus.OK);
+
+	}
+	
 }
