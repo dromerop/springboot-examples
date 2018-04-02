@@ -23,6 +23,8 @@ and the problem using Specifications persists.
 
 Just import the project into your IDE as a maven project and run Application.java
 
+You can also try the included JUnit tests.
+
 == REST URL's
 
 . http://localhost:8080/jpa-projections/customer/find/all
