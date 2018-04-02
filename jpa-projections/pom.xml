@@ -11,9 +11,8 @@
 	<url>http://maven.apache.org</url>
 
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.10.RELEASE</version>
+		<groupId>cl.dromerop</groupId>
+		<artifactId>springboot-examples</artifactId>
 	</parent>
 
 	<dependencies>
