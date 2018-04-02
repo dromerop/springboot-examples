@@ -4,23 +4,37 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cl.dromerop</groupId>
-    <artifactId>spring-boot.examples</artifactId>
+    <artifactId>spring-boot-examples</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-boot.examples</name>
+    <name>Spring-Boot Examples</name>
     <description>dromerop spring-boot examples</description>
 
-
     <modules>
-        <module>jpa-projections</module>      
+        <module>jpa-projections</module>
     </modules>
+
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.4.RELEASE</version>
-        <relativePath /> <!-- lookup parent from repository -->
+	<relativePath />
     </parent>
+
+  <repositories>
+    <repository>
+      <id>central</id>
+      <name>Maven Repository Switchboard</name>
+      <layout>default</layout>
+      <url>http://repo1.maven.org/maven2</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+
+
+  </repositories>
 
 
     <build>

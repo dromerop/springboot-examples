@@ -5,14 +5,14 @@
 	<groupId>cl.dromerop.spring-boot.examples</groupId>
 	<artifactId>jpa-projections</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>jpa-projections Maven Webapp</name>
+	<name>Spring-Boot Examples - JPA Projections</name>
 
 	<packaging>war</packaging>
 	<url>http://maven.apache.org</url>
 
 	<parent>
 		<groupId>cl.dromerop</groupId>
-		<artifactId>springboot-examples</artifactId>
+		<artifactId>spring-boot-examples</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
