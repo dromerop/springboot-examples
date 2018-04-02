@@ -5,7 +5,9 @@ Daniel Romero P. <romero.cl@gmail.com>
 
 This example tests the JPA repositories ability to map results into entities projections. When Specifications are used, there's an error I was unable to find what cause it.
 
-Related bug: https://jira.spring.io/browse/DATAJPA-1185 
+Related bugs: 
+. https://jira.spring.io/browse/DATAJPA-1185 
+. https://jira.spring.io/browse/DATAJPA-1033
 
 In this example we will expose CustomerRepository methods using REST interfaces. HA database is used to create an in memory Customer table.
 
