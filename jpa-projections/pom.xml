@@ -13,6 +13,7 @@
 	<parent>
 		<groupId>cl.dromerop</groupId>
 		<artifactId>springboot-examples</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
 	<dependencies>
